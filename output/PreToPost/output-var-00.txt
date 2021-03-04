@@ -1,0 +1,34 @@
+
+PREFIX EXPRESSION from ../input/PreToPost/input-var-00.txt
+
++
+A *                   - *
+B C *               / D
+
+$
+ E
+F G
+
+         H
+
+/---------------------------------/
+
+PREFIX STACK     POSTFIX STACK    
+(reversed)       
+                
+[HGFE$D/*CB*-*A+][]               
+[GFE$D/*CB*-*A+] [H]              
+[FE$D/*CB*-*A+]  [GH]             
+[E$D/*CB*-*A+]   [FGH]            
+[$D/*CB*-*A+]    [EFGH]           
+[D/*CB*-*A+]     [EF$GH]          
+[/*CB*-*A+]      [DEF$GH]         
+[*CB*-*A+]       [DEF$/GH]        
+[CB*-*A+]        [DEF$/G*H]       
+[B*-*A+]         [CDEF$/G*H]      
+[*-*A+]          [BCDEF$/G*H]     
+[-*A+]           [BC*DEF$/G*H]    
+[*A+]            [BC*DEF$/G*-H]   
+[A+]             [BC*DEF$/G*-H*]  
+[+]              [ABC*DEF$/G*-H*] 
+[]               [ABC*DEF$/G*-H*+]

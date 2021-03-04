@@ -1,0 +1,41 @@
+
+PREFIX EXPRESSION from ../input/PreToPostDelimited/./check/input-var-04.txt
+
+             -$
+ABCD
+E
+ F                     *                  GH
+
+
+ *              *
+  IJ KL
+ MN
+
+/---------------------------------/
+
+PREFIX STACK (reversed)         POSTFIX STACK
+                  
+[NM LK JI * * HG * F E DCBA $ -][]                              
+[ LK JI * * HG * F E DCBA $ -]  [MN]                            
+[LK JI * * HG * F E DCBA $ -]   [ MN]                           
+[ JI * * HG * F E DCBA $ -]     [KL MN]                         
+[JI * * HG * F E DCBA $ -]      [ KL MN]                        
+[ * * HG * F E DCBA $ -]        [IJ KL MN]                      
+[* * HG * F E DCBA $ -]         [ IJ KL MN]                     
+[ * HG * F E DCBA $ -]          [IJ KL * MN]                    
+[* HG * F E DCBA $ -]           [ IJ KL * MN]                   
+[ HG * F E DCBA $ -]            [IJ KL * MN *]                  
+[HG * F E DCBA $ -]             [ IJ KL * MN *]                 
+[ * F E DCBA $ -]               [GH IJ KL * MN *]               
+[* F E DCBA $ -]                [ GH IJ KL * MN *]              
+[ F E DCBA $ -]                 [GH IJ KL * MN * *]             
+[F E DCBA $ -]                  [ GH IJ KL * MN * *]            
+[ E DCBA $ -]                   [F GH IJ KL * MN * *]           
+[E DCBA $ -]                    [ F GH IJ KL * MN * *]          
+[ DCBA $ -]                     [E F GH IJ KL * MN * *]         
+[DCBA $ -]                      [ E F GH IJ KL * MN * *]        
+[ $ -]                          [ABCD E F GH IJ KL * MN * *]    
+[$ -]                           [ ABCD E F GH IJ KL * MN * *]   
+[ -]                            [ABCD E $ F GH IJ KL * MN * *]  
+[-]                             [ ABCD E $ F GH IJ KL * MN * *] 
+[]                              [ABCD E $ F - GH IJ KL * MN * *]

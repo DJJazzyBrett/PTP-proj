@@ -1,0 +1,22 @@
+
+PREFIX EXPRESSION from ../input/PreToPost/input-var-02.txt
+
+*-A/BC-/DEF
+
+/---------------------------------/
+
+PREFIX STACK POSTFIX STACK
+(reversed)   
+            
+[FED/-CB/A-*][]           
+[ED/-CB/A-*] [F]          
+[D/-CB/A-*]  [EF]         
+[/-CB/A-*]   [DEF]        
+[-CB/A-*]    [DE/F]       
+[CB/A-*]     [DE/F-]      
+[B/A-*]      [CDE/F-]     
+[/A-*]       [BCDE/F-]    
+[A-*]        [BC/DE/F-]   
+[-*]         [ABC/DE/F-]  
+[*]          [ABC/-DE/F-] 
+[]           [ABC/-DE/F-*]
