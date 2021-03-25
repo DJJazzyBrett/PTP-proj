@@ -1,9 +1,9 @@
 /*
  * StackADT
  *
- * Brett Johnson
- * EN.605.202.81.SP21 Data Structures
- * Lab 1-updt
+ * DJJazzyBrett
+ *
+ * PTP-proj/updt
  *
  */
 
@@ -13,7 +13,7 @@
  * Interface for stack data structure. Interface remains the same
  * regardless of underlying implementation.
  *
- * @author Brett Johnson
+ * @author DJJazzyBrett
  * @version 2.0 25 March 2021
  * @since 1.0
  */

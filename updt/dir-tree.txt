@@ -3,18 +3,10 @@
 │   ├── algorithm2e.sty
 │   ├── algorithmic.sty
 │   ├── algorithmicx.sty
-│   ├── algorithm.sty
-│   ├── Lab1_Analysis_BrettJohnson.bbl
-│   ├── Lab1_Analysis_BrettJohnson.org
-│   ├── Lab1_Analysis_BrettJohnson.pdf
-│   └── Lab1_Analysis_BrettJohnson.tex
+│   └── algorithm.sty
 ├── dir-tree.txt
 ├── info
-│   ├── code-samples.org
-│   ├── Error Handling and Exceptions.pdf
-│   ├── JavaCodeConventions.pdf
-│   ├── LabIterativePreToPost.pdf
-│   └── ProgrammingAssignmentsGuidelines.pdf
+│   └── JavaCodeConventions.pdf
 ├── input
 │   ├── PreToPost
 │   │   ├── check
@@ -133,4 +125,4 @@
     ├── StackLinkBased.class
     └── StackLinkBased.java
 
-17 directories, 116 files
+17 directories, 108 files

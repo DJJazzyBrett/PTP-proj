@@ -1,9 +1,9 @@
 /*
  * StackLinkBased
  *
- * Brett Johnson
- * EN.605.202.81.SP21 Data Structures
- * Lab 1-updt
+ * DJJazzyBrett
+ *
+ * PTP-proj/updt
  *
  */
 import java.util.NoSuchElementException;
@@ -16,7 +16,7 @@ import java.util.NoSuchElementException;
  * <p>
  * This implementation relies on class Node.
  *
- * @author Brett Johnson
+ * @author DJJazzyBrett
  * @version 2.0 25 March 2021
  * @since 1.0
  */

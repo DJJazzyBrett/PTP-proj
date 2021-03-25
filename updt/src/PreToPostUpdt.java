@@ -1,12 +1,11 @@
 /*
  * PreToPostUpdt
  *
- * Brett Johnson
- * EN.605.202.81.SP21 Data Structures
- * Lab 1-updt
+ * DJJazzyBrett
+ *
+ * PTP-proj/updt
  *
  */
-
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -21,7 +20,7 @@ import java.util.NoSuchElementException;
  * <h1>PreToPostUpdt</h1>
  *
  *
- * @author Brett Johnson
+ * @author DJJazzyBrett
  * @version 1.0 25 March 2021
  * @since 1.0
  */

@@ -1,9 +1,9 @@
 /*
  * PreToPostDelimited
  *
- * Brett Johnson
- * EN.605.202.81.SP21 Data Structures
- * Lab 1-updt
+ * DJJazzyBrett
+ *
+ * PTP-proj/updt
  *
  */
 import java.io.BufferedReader;
@@ -27,7 +27,7 @@ import java.io.IOException;
  * are available as .txt files in ../input/PreToPostDelimited/ locale.
  * Related output files can be found in ../output/PreToPostDelimited/ locale.
  *
- * @author Brett Johnson
+ * @author DJJazzyBrett
  * @version 1.0 02 March 2021
  * @since 1.0
  */
