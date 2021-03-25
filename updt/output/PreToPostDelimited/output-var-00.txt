@@ -1,0 +1,47 @@
+
+PREFIX EXPRESSION from ../input/PreToPostDelimited/input-var-00.txt
+
++
+A *                   - *
+B C *               / D
+
+$
+ E
+F G
+
+         H
+
+/---------------------------------/
+
+PREFIX STACK (reversed)        POSTFIX STACK
+                 
+  [H G F E $ D / * C B * - * A +]  []                           
+  [ G F E $ D / * C B * - * A +]  [H]                          
+  [G F E $ D / * C B * - * A +]  [ H]                         
+  [ F E $ D / * C B * - * A +]   [G H]                        
+  [F E $ D / * C B * - * A +]    [ G H]                       
+  [ E $ D / * C B * - * A +]     [F G H]                      
+  [E $ D / * C B * - * A +]      [ F G H]                     
+  [ $ D / * C B * - * A +]       [E F G H]                    
+  [$ D / * C B * - * A +]        [ E F G H]                   
+  [ D / * C B * - * A +]         [E F $ G H]                  
+  [D / * C B * - * A +]          [ E F $ G H]                 
+  [ / * C B * - * A +]           [D E F $ G H]                
+  [/ * C B * - * A +]            [ D E F $ G H]               
+  [ * C B * - * A +]             [D E F $ / G H]              
+  [* C B * - * A +]              [ D E F $ / G H]             
+  [ C B * - * A +]               [D E F $ / G * H]            
+  [C B * - * A +]                [ D E F $ / G * H]           
+  [ B * - * A +]                 [C D E F $ / G * H]          
+  [B * - * A +]                  [ C D E F $ / G * H]         
+  [ * - * A +]                   [B C D E F $ / G * H]        
+  [* - * A +]                    [ B C D E F $ / G * H]       
+  [ - * A +]                     [B C * D E F $ / G * H]      
+  [- * A +]                      [ B C * D E F $ / G * H]     
+  [ * A +]                       [B C * D E F $ / G * - H]    
+  [* A +]                        [ B C * D E F $ / G * - H]   
+  [ A +]                         [B C * D E F $ / G * - H *]  
+  [A +]                          [ B C * D E F $ / G * - H *] 
+  [ +]                           [A B C * D E F $ / G * - H *]
+  [+]                            [ A B C * D E F $ / G * - H *]
+  []                             [A B C * D E F $ / G * - H * +]

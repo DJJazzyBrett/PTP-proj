@@ -1,0 +1,77 @@
+
+PREFIX EXPRESSION from ../input/PreToPostDelimited/input-var-03.txt
+
+++A     -
+
+
+*$B CDE F/ +   GH    I
+*
+JK LMNO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+P
+
+/---------------------------------/
+
+PREFIX STACK (reversed)                   POSTFIX STACK
+                            
+[P ONML KJ * I HG + / F EDC B $ * - A + +][]                                        
+[ ONML KJ * I HG + / F EDC B $ * - A + +] [P]                                       
+[ONML KJ * I HG + / F EDC B $ * - A + +]  [ P]                                      
+[ KJ * I HG + / F EDC B $ * - A + +]      [LMNO P]                                  
+[KJ * I HG + / F EDC B $ * - A + +]       [ LMNO P]                                 
+[ * I HG + / F EDC B $ * - A + +]         [JK LMNO P]                               
+[* I HG + / F EDC B $ * - A + +]          [ JK LMNO P]                              
+[ I HG + / F EDC B $ * - A + +]           [JK LMNO * P]                             
+[I HG + / F EDC B $ * - A + +]            [ JK LMNO * P]                            
+[ HG + / F EDC B $ * - A + +]             [I JK LMNO * P]                           
+[HG + / F EDC B $ * - A + +]              [ I JK LMNO * P]                          
+[ + / F EDC B $ * - A + +]                [GH I JK LMNO * P]                        
+[+ / F EDC B $ * - A + +]                 [ GH I JK LMNO * P]                       
+[ / F EDC B $ * - A + +]                  [GH I + JK LMNO * P]                      
+[/ F EDC B $ * - A + +]                   [ GH I + JK LMNO * P]                     
+[ F EDC B $ * - A + +]                    [GH I + JK LMNO * / P]                    
+[F EDC B $ * - A + +]                     [ GH I + JK LMNO * / P]                   
+[ EDC B $ * - A + +]                      [F GH I + JK LMNO * / P]                  
+[EDC B $ * - A + +]                       [ F GH I + JK LMNO * / P]                 
+[ B $ * - A + +]                          [CDE F GH I + JK LMNO * / P]              
+[B $ * - A + +]                           [ CDE F GH I + JK LMNO * / P]             
+[ $ * - A + +]                            [B CDE F GH I + JK LMNO * / P]            
+[$ * - A + +]                             [ B CDE F GH I + JK LMNO * / P]           
+[ * - A + +]                              [B CDE $ F GH I + JK LMNO * / P]          
+[* - A + +]                               [ B CDE $ F GH I + JK LMNO * / P]         
+[ - A + +]                                [B CDE $ F * GH I + JK LMNO * / P]        
+[- A + +]                                 [ B CDE $ F * GH I + JK LMNO * / P]       
+[ A + +]                                  [B CDE $ F * GH I + JK LMNO * / - P]      
+[A + +]                                   [ B CDE $ F * GH I + JK LMNO * / - P]     
+[ + +]                                    [A B CDE $ F * GH I + JK LMNO * / - P]    
+[+ +]                                     [ A B CDE $ F * GH I + JK LMNO * / - P]   
+[ +]                                      [A B CDE $ F * GH I + JK LMNO * / - + P]  
+[+]                                       [ A B CDE $ F * GH I + JK LMNO * / - + P] 
+[]                                        [A B CDE $ F * GH I + JK LMNO * / - + P +]

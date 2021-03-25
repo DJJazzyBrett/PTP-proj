@@ -1,0 +1,136 @@
+.
+├── analysis
+│   ├── algorithm2e.sty
+│   ├── algorithmic.sty
+│   ├── algorithmicx.sty
+│   ├── algorithm.sty
+│   ├── Lab1_Analysis_BrettJohnson.bbl
+│   ├── Lab1_Analysis_BrettJohnson.org
+│   ├── Lab1_Analysis_BrettJohnson.pdf
+│   └── Lab1_Analysis_BrettJohnson.tex
+├── dir-tree.txt
+├── info
+│   ├── code-samples.org
+│   ├── Error Handling and Exceptions.pdf
+│   ├── JavaCodeConventions.pdf
+│   ├── LabIterativePreToPost.pdf
+│   └── ProgrammingAssignmentsGuidelines.pdf
+├── input
+│   ├── PreToPost
+│   │   ├── check
+│   │   │   ├── input-num-01.txt
+│   │   │   ├── input-num-02.txt
+│   │   │   ├── input-num-03.txt
+│   │   │   ├── input-num-04.txt
+│   │   │   ├── input-var-01.txt
+│   │   │   ├── input-var-02.txt
+│   │   │   ├── input-var-03.txt
+│   │   │   └── input-var-04.txt
+│   │   ├── input-num-01.txt
+│   │   ├── input-num-02.txt
+│   │   ├── input-num-03.txt
+│   │   ├── input-num-04.txt
+│   │   ├── input-var-00.txt
+│   │   ├── input-var-01.txt
+│   │   ├── input-var-02.txt
+│   │   ├── input-var-03.txt
+│   │   └── input-var-04.txt
+│   ├── PreToPostDelimited
+│   │   ├── check
+│   │   │   ├── input-num-01.txt
+│   │   │   ├── input-num-02.txt
+│   │   │   ├── input-num-03.txt
+│   │   │   ├── input-num-04.txt
+│   │   │   ├── input-var-01.txt
+│   │   │   ├── input-var-02.txt
+│   │   │   ├── input-var-03.txt
+│   │   │   └── input-var-04.txt
+│   │   ├── input-num-01.txt
+│   │   ├── input-num-02.txt
+│   │   ├── input-num-03.txt
+│   │   ├── input-num-04.txt
+│   │   ├── input-var-00.txt
+│   │   ├── input-var-01.txt
+│   │   ├── input-var-02.txt
+│   │   ├── input-var-03.txt
+│   │   └── input-var-04.txt
+│   └── PreToPostUpdt
+│       ├── dblPlusGood.txt
+│       ├── holyExp.txt
+│       ├── lengthyExp.txt
+│       ├── makeUpUrMind.txt
+│       ├── required
+│       │   └── input.txt
+│       ├── rWeThereYet.txt
+│       ├── switcheroo.txt
+│       └── weTalkinBoutPractice.txt
+├── output
+│   ├── PreToPost
+│   │   ├── check
+│   │   │   ├── output-num-01.txt
+│   │   │   ├── output-num-02.txt
+│   │   │   ├── output-num-03.txt
+│   │   │   ├── output-num-04.txt
+│   │   │   ├── output-var-01.txt
+│   │   │   ├── output-var-02.txt
+│   │   │   ├── output-var-03.txt
+│   │   │   └── output-var-04.txt
+│   │   ├── output-num-01.txt
+│   │   ├── output-num-02.txt
+│   │   ├── output-num-03.txt
+│   │   ├── output-num-04.txt
+│   │   ├── output-var-00.txt
+│   │   ├── output-var-01.txt
+│   │   ├── output-var-02.txt
+│   │   ├── output-var-03.txt
+│   │   └── output-var-04.txt
+│   ├── PreToPostDelimited
+│   │   ├── check
+│   │   │   ├── output-num-01.txt
+│   │   │   ├── output-num-02.txt
+│   │   │   ├── output-num-03.txt
+│   │   │   ├── output-num-04.txt
+│   │   │   ├── output-var-01.txt
+│   │   │   ├── output-var-02.txt
+│   │   │   ├── output-var-03.txt
+│   │   │   └── output-var-04.txt
+│   │   ├── output-num-01.txt
+│   │   ├── output-num-02.txt
+│   │   ├── output-num-03.txt
+│   │   ├── output-num-04.txt
+│   │   ├── output-var-00.txt
+│   │   ├── output-var-01.txt
+│   │   ├── output-var-02.txt
+│   │   ├── output-var-03.txt
+│   │   └── output-var-04.txt
+│   └── PreToPostUpdt
+│       ├── dblPlusGood.txt
+│       ├── holyExp.txt
+│       ├── lengthyExp.txt
+│       ├── log.txt
+│       ├── makeUpUrMind.txt
+│       ├── required
+│       │   ├── output-option1.txt
+│       │   ├── output-option2.txt
+│       │   └── output-option3.txt
+│       ├── rWeThereYet.txt
+│       ├── switcheroo.txt
+│       └── weTalkinBoutPractice.txt
+├── README.txt
+└── src
+    ├── ExprCon.class
+    ├── ExprCon.java
+    ├── Node.class
+    ├── Node.java
+    ├── PreToPost.class
+    ├── PreToPostDelimited.class
+    ├── PreToPostDelimited.java
+    ├── PreToPost.java
+    ├── PreToPostUpdt.class
+    ├── PreToPostUpdt.java
+    ├── StackADT.class
+    ├── StackADT.java
+    ├── StackLinkBased.class
+    └── StackLinkBased.java
+
+17 directories, 116 files

@@ -1,0 +1,41 @@
+
+PREFIX EXPRESSION from ../input/PreToPostDelimited//check/input-var-02.txt
+
+       *
+       -A/ BCD E
+       -
+ /
+  FGH
+ I
+
+
+
+
+JK
+
+/---------------------------------/
+
+PREFIX STACK (reversed)     POSTFIX STACK
+              
+  [KJ I HGF / - E DCB / A - *]  []                        
+  [ I HGF / - E DCB / A - *]  [JK]                      
+  [I HGF / - E DCB / A - *]   [ JK]                     
+  [ HGF / - E DCB / A - *]    [I JK]                    
+  [HGF / - E DCB / A - *]     [ I JK]                   
+  [ / - E DCB / A - *]        [FGH I JK]                
+  [/ - E DCB / A - *]         [ FGH I JK]               
+  [ - E DCB / A - *]          [FGH I / JK]              
+  [- E DCB / A - *]           [ FGH I / JK]             
+  [ E DCB / A - *]            [FGH I / JK -]            
+  [E DCB / A - *]             [ FGH I / JK -]           
+  [ DCB / A - *]              [E FGH I / JK -]          
+  [DCB / A - *]               [ E FGH I / JK -]         
+  [ / A - *]                  [BCD E FGH I / JK -]      
+  [/ A - *]                   [ BCD E FGH I / JK -]     
+  [ A - *]                    [BCD E / FGH I / JK -]    
+  [A - *]                     [ BCD E / FGH I / JK -]   
+  [ - *]                      [A BCD E / FGH I / JK -]  
+  [- *]                       [ A BCD E / FGH I / JK -] 
+  [ *]                        [A BCD E / - FGH I / JK -]
+  [*]                         [ A BCD E / - FGH I / JK -]
+  []                          [A BCD E / - FGH I / JK - *]

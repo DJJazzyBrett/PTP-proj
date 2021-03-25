@@ -1,0 +1,118 @@
+
+---- Begin processing of prefix expression #1 ----
+
+Pushing item to stack: -
+Pushing item to stack: +
+Pushing item to stack: +
+Pushing item to stack: -
+Pushing item to stack: -
+Pushing item to stack: +
+Pushing item to stack: +
+Pushing item to stack: *
+Pushing item to stack: $
+Pushing item to stack: $
+Pushing item to stack: A
+Pushing item to stack: +
+Pushing item to stack: B
+Pushing item to stack: C
+Pushing item to stack: /
+Pushing item to stack: D
+Pushing item to stack: E
+Pushing item to stack: F
+Pushing item to stack: *
+Pushing item to stack: G
+Pushing item to stack: H
+Pushing item to stack: -
+Pushing item to stack: $
+Pushing item to stack: J
+Pushing item to stack: K
+Pushing item to stack: *
+Pushing item to stack: L
+Pushing item to stack: +
+Pushing item to stack: M
+Pushing item to stack: N
+Pushing item to stack: O
+Pushing item to stack: P
+Pushing item to stack: $
+Pushing item to stack: Q
+Pushing item to stack: $
+Pushing item to stack: *
+Pushing item to stack: $
+Pushing item to stack: R
+Pushing item to stack: $
+Pushing item to stack: S
+Pushing item to stack: /
+Pushing item to stack: /
+Pushing item to stack: T
+Pushing item to stack: U
+Pushing item to stack: V
+Pushing item to stack: W
+Pushing item to stack: X
+Pushing item to stack: Y
+Pushing item to stack: Z
+
+---- End processing of prefix expression #1 ----
+
+
+////////////// COMMENCE CONVERSION PROCESS //////////////
+
+Original prefix expression: 
+-++--++*$$A+BC/DEF*GH-$JK*L+MNOP$Q$*$R$S//TUVWXYZ
+
+|- PREFIX STACK -| |- POSTFIX STACK -|
+
+  [ZYXWVUT//S$R$*$Q$PONM+L*KJ$-HG*FED/CB+A$$*++--++-]  []                                               
+  [YXWVUT//S$R$*$Q$PONM+L*KJ$-HG*FED/CB+A$$*++--++-]  [Z]                                             
+  [XWVUT//S$R$*$Q$PONM+L*KJ$-HG*FED/CB+A$$*++--++-]  [YZ]                                           
+  [WVUT//S$R$*$Q$PONM+L*KJ$-HG*FED/CB+A$$*++--++-]  [XYZ]                                         
+  [VUT//S$R$*$Q$PONM+L*KJ$-HG*FED/CB+A$$*++--++-]  [WXYZ]                                       
+  [UT//S$R$*$Q$PONM+L*KJ$-HG*FED/CB+A$$*++--++-]  [VWXYZ]                                     
+  [T//S$R$*$Q$PONM+L*KJ$-HG*FED/CB+A$$*++--++-]  [UVWXYZ]                                   
+  [//S$R$*$Q$PONM+L*KJ$-HG*FED/CB+A$$*++--++-]  [TUVWXYZ]                                 
+  [/S$R$*$Q$PONM+L*KJ$-HG*FED/CB+A$$*++--++-]  [TU/VWXYZ]                               
+  [S$R$*$Q$PONM+L*KJ$-HG*FED/CB+A$$*++--++-]  [TU/V/WXYZ]                             
+  [$R$*$Q$PONM+L*KJ$-HG*FED/CB+A$$*++--++-]  [STU/V/WXYZ]                           
+  [R$*$Q$PONM+L*KJ$-HG*FED/CB+A$$*++--++-]  [STU/V/$WXYZ]                         
+  [$*$Q$PONM+L*KJ$-HG*FED/CB+A$$*++--++-]  [RSTU/V/$WXYZ]                       
+  [*$Q$PONM+L*KJ$-HG*FED/CB+A$$*++--++-]  [RSTU/V/$$WXYZ]                     
+  [$Q$PONM+L*KJ$-HG*FED/CB+A$$*++--++-]  [RSTU/V/$$W*XYZ]                   
+  [Q$PONM+L*KJ$-HG*FED/CB+A$$*++--++-]  [RSTU/V/$$W*X$YZ]                 
+  [$PONM+L*KJ$-HG*FED/CB+A$$*++--++-]  [QRSTU/V/$$W*X$YZ]               
+  [PONM+L*KJ$-HG*FED/CB+A$$*++--++-]  [QRSTU/V/$$W*X$$YZ]             
+  [ONM+L*KJ$-HG*FED/CB+A$$*++--++-]  [PQRSTU/V/$$W*X$$YZ]           
+  [NM+L*KJ$-HG*FED/CB+A$$*++--++-]  [OPQRSTU/V/$$W*X$$YZ]         
+  [M+L*KJ$-HG*FED/CB+A$$*++--++-]  [NOPQRSTU/V/$$W*X$$YZ]       
+  [+L*KJ$-HG*FED/CB+A$$*++--++-]  [MNOPQRSTU/V/$$W*X$$YZ]     
+  [L*KJ$-HG*FED/CB+A$$*++--++-]  [MN+OPQRSTU/V/$$W*X$$YZ]   
+  [*KJ$-HG*FED/CB+A$$*++--++-]  [LMN+OPQRSTU/V/$$W*X$$YZ] 
+  [KJ$-HG*FED/CB+A$$*++--++-]  [LMN+*OPQRSTU/V/$$W*X$$YZ]
+  [J$-HG*FED/CB+A$$*++--++-]  [KLMN+*OPQRSTU/V/$$W*X$$YZ]
+  [$-HG*FED/CB+A$$*++--++-]  [JKLMN+*OPQRSTU/V/$$W*X$$YZ]
+  [-HG*FED/CB+A$$*++--++-]  [JK$LMN+*OPQRSTU/V/$$W*X$$YZ]
+  [HG*FED/CB+A$$*++--++-]  [JK$LMN+*-OPQRSTU/V/$$W*X$$YZ]
+  [G*FED/CB+A$$*++--++-]  [HJK$LMN+*-OPQRSTU/V/$$W*X$$YZ]
+  [*FED/CB+A$$*++--++-]  [GHJK$LMN+*-OPQRSTU/V/$$W*X$$YZ]
+  [FED/CB+A$$*++--++-]  [GH*JK$LMN+*-OPQRSTU/V/$$W*X$$YZ]
+  [ED/CB+A$$*++--++-]  [FGH*JK$LMN+*-OPQRSTU/V/$$W*X$$YZ]
+  [D/CB+A$$*++--++-]  [EFGH*JK$LMN+*-OPQRSTU/V/$$W*X$$YZ]
+  [/CB+A$$*++--++-]   [DEFGH*JK$LMN+*-OPQRSTU/V/$$W*X$$YZ]
+  [CB+A$$*++--++-]    [DE/FGH*JK$LMN+*-OPQRSTU/V/$$W*X$$YZ]
+  [B+A$$*++--++-]     [CDE/FGH*JK$LMN+*-OPQRSTU/V/$$W*X$$YZ]
+  [+A$$*++--++-]      [BCDE/FGH*JK$LMN+*-OPQRSTU/V/$$W*X$$YZ]
+  [A$$*++--++-]       [BC+DE/FGH*JK$LMN+*-OPQRSTU/V/$$W*X$$YZ]
+  [$$*++--++-]        [ABC+DE/FGH*JK$LMN+*-OPQRSTU/V/$$W*X$$YZ]
+  [$*++--++-]         [ABC+$DE/FGH*JK$LMN+*-OPQRSTU/V/$$W*X$$YZ]
+  [*++--++-]          [ABC+$DE/$FGH*JK$LMN+*-OPQRSTU/V/$$W*X$$YZ]
+  [++--++-]           [ABC+$DE/$F*GH*JK$LMN+*-OPQRSTU/V/$$W*X$$YZ]
+  [+--++-]            [ABC+$DE/$F*GH*+JK$LMN+*-OPQRSTU/V/$$W*X$$YZ]
+  [--++-]             [ABC+$DE/$F*GH*+JK$LMN+*-+OPQRSTU/V/$$W*X$$YZ]
+  [-++-]              [ABC+$DE/$F*GH*+JK$LMN+*-+O-PQRSTU/V/$$W*X$$YZ]
+  [++-]               [ABC+$DE/$F*GH*+JK$LMN+*-+O-P-QRSTU/V/$$W*X$$YZ]
+  [+-]                [ABC+$DE/$F*GH*+JK$LMN+*-+O-P-QRSTU/V/$$W*X$$+YZ]
+  [-]                 [ABC+$DE/$F*GH*+JK$LMN+*-+O-P-QRSTU/V/$$W*X$$+Y+Z]
+  []                  [ABC+$DE/$F*GH*+JK$LMN+*-+O-P-QRSTU/V/$$W*X$$+Y+Z-]
+
+Final postfix expression: ABC+$DE/$F*GH*+JK$LMN+*-+O-P-QRSTU/V/$$W*X$$+Y+Z-
+
+////////////// CONCLUDE CONVERSION PROCESS //////////////
+

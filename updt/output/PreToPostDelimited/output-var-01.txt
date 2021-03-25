@@ -1,0 +1,49 @@
+
+PREFIX EXPRESSION from ../input/PreToPostDelimited/input-var-01.txt
+
++   - *  $
+
+A BC     DEF  G
+/
+/ H I  +
+
+
+
+
+
+J K
+
+/---------------------------------/
+
+PREFIX STACK (reversed)           POSTFIX STACK
+                    
+[K J + I H / / G FED CB A $ * - +][]                                
+[ J + I H / / G FED CB A $ * - +] [K]                               
+[J + I H / / G FED CB A $ * - +]  [ K]                              
+[ + I H / / G FED CB A $ * - +]   [J K]                             
+[+ I H / / G FED CB A $ * - +]    [ J K]                            
+[ I H / / G FED CB A $ * - +]     [J K +]                           
+[I H / / G FED CB A $ * - +]      [ J K +]                          
+[ H / / G FED CB A $ * - +]       [I J K +]                         
+[H / / G FED CB A $ * - +]        [ I J K +]                        
+[ / / G FED CB A $ * - +]         [H I J K +]                       
+[/ / G FED CB A $ * - +]          [ H I J K +]                      
+[ / G FED CB A $ * - +]           [H I / J K +]                     
+[/ G FED CB A $ * - +]            [ H I / J K +]                    
+[ G FED CB A $ * - +]             [H I / J K + /]                   
+[G FED CB A $ * - +]              [ H I / J K + /]                  
+[ FED CB A $ * - +]               [G H I / J K + /]                 
+[FED CB A $ * - +]                [ G H I / J K + /]                
+[ CB A $ * - +]                   [DEF G H I / J K + /]             
+[CB A $ * - +]                    [ DEF G H I / J K + /]            
+[ A $ * - +]                      [BC DEF G H I / J K + /]          
+[A $ * - +]                       [ BC DEF G H I / J K + /]         
+[ $ * - +]                        [A BC DEF G H I / J K + /]        
+[$ * - +]                         [ A BC DEF G H I / J K + /]       
+[ * - +]                          [A BC $ DEF G H I / J K + /]      
+[* - +]                           [ A BC $ DEF G H I / J K + /]     
+[ - +]                            [A BC $ DEF * G H I / J K + /]    
+[- +]                             [ A BC $ DEF * G H I / J K + /]   
+[ +]                              [A BC $ DEF * G - H I / J K + /]  
+[+]                               [ A BC $ DEF * G - H I / J K + /] 
+[]                                [A BC $ DEF * G - H I / J K + / +]
